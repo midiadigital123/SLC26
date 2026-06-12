@@ -1689,12 +1689,6 @@ body {
   margin-right: 15px;
 }
 
-/* .sanfona-collapse a[data-toggle="collapse"] svg {
-  transition: all 0.2s linear;
-  color: var(--sec3);
-  font-size: 1.52rem;
-} */
-
 .sanfona-collapse a[data-toggle="collapse"]:hover svg {
   color: var(--base-projeto);
   transition: all 0.4s linear;
@@ -2608,24 +2602,6 @@ body {
   .no-overflow .progress-bar-caed {
     top: 43px;
   }
-}
-
-.termo-rnc .fontDanger {
-  color: var(--danger);
-}
-
-.termo-rnc .text-center {
-  text-align: center !important;
-}
-
-.termo-rnc #logo-rnc {
-  width: 50%;
-  height: auto;
-}
-
-.termo-rnc #logo-inep {
-  width: 30%;
-  height: auto;
 }
 
 @media screen and (min-width: 768px) {
