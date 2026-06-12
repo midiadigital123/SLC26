@@ -1,0 +1,21 @@
+{
+  "titulo": "Sobre o vídeo acima, responda e confira seu desempenho!",
+  "subtitulo": "",
+  "questoes": [
+    {
+      "id": 1,
+      "enunciado": "A devolutiva pedagógica é uma etapa essencial que transforma os dados coletados durante a avaliação em informações úteis para a gestão do ensino. Para que esse processo cumpra seu papel no ciclo de aprendizagem, a função principal da devolutiva pedagógica no processo de avaliação educacional é:",
+      "alternativas": [
+        "Comparar o desempenho entre diferentes unidades escolares.",
+        "Divulgar os resultados obtidos para especialistas da área.",
+        "Encerrar o processo avaliativo após a aplicação do teste.",
+        "Subsidiar a tomada de decisões pedagógicas a partir dos resultados."
+      ],
+      "correta": 3,
+      "feedback": {
+        "correto": "Muito bem! Você veio de lá pequenininho!",
+        "incorreto": "Mal educado"
+      }
+    }
+  ]
+}

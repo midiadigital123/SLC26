@@ -1,0 +1,21 @@
+{
+  "titulo": "Vamos conhecer o perfil da sua escola com relação ao uso dos resultados das avaliações educacionais?",
+  "subtitulo": "Responda as questões abaixo e confira!",
+  "questoes": [
+    {
+      "id": 1,
+      "enunciado": "Considerando a gestão baseada em evidências, a formação continuada articula-se com os resultados das avaliações externas ao propor a:",
+      "alternativas": [
+        "Distância dos resultados para a preservação da autonomia docente.",
+        "Reflexão coletiva sobre currículo e aprendizagens baseado nos resultados.",
+        "Utilização dos dados para o cumprimento de finalidades burocráticas.",
+        "Utilização dos dados para o estudo de médias gerais da rede de ensino."
+      ],
+      "correta": 1,
+      "feedback": {
+        "correto": "Muito bem! Você veio de lá pequenininho!",
+        "incorreto": "Mal educado"
+      }
+    }
+  ]
+}

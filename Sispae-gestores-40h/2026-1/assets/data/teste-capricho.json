@@ -1,0 +1,223 @@
+{
+  "perguntas": [
+    {
+      "pergunta": "Quando os resultados das avaliações externas chegam à escola, o que normalmente acontece?",
+      "opcoes": [
+        {
+          "label": "A equipe analisa os dados coletivamente e os utiliza para rever práticas e planejamento.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Os dados são organizados e encaminhados conforme as orientações do sistema.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Os resultados circulam pouco e acabam não sendo incorporados ao trabalho da escola.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "No planejamento pedagógico anual ou semestral, os dados de avaliação:",
+      "opcoes": [
+        {
+          "label": "São uma referência constante para definir prioridades e estratégias.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Aparecem apenas para atender exigências formais.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Raramente são considerados no processo de planejamento.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "Nas reuniões pedagógicas, os dados de aprendizagem:",
+      "opcoes": [
+        {
+          "label": "Servem de base para análise, identificação de fragilidades e definição de ações.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "São mencionados de forma pontual, sem aprofundamento.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Quase nunca entram na pauta das reuniões.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "Para os professores, os resultados das avaliações:",
+      "opcoes": [
+        {
+          "label": "Ajudam a ajustar metodologias, intervenções e estratégias em sala de aula.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Funcionam mais como informação geral, sem mudanças significativas na prática.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Não têm relação com o trabalho pedagógico cotidiano.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "A gestão escolar utiliza os dados principalmente para:",
+      "opcoes": [
+        {
+          "label": "Acompanhar a aprendizagem e orientar decisões pedagógicas.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Atender demandas administrativas e prestação de contas.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Não utiliza ou tem pouco contato com os dados disponíveis.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "Quando a escola identifica baixos resultados de aprendizagem:",
+      "opcoes": [
+        {
+          "label": "Planeja ações formativas e intervenções pedagógicas específicas.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Reconhece o problema, mas sem ações sistemáticas.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Não consegue transformar os dados em encaminhamentos concretos.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "O acompanhamento da aprendizagem dos estudantes:",
+      "opcoes": [
+        {
+          "label": "É contínuo e orientado por indicadores e evidências.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Acontece principalmente nos momentos avaliativos formais.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Não segue critérios claros ou definidos.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "De modo geral, a cultura avaliativa da escola é:",
+      "opcoes": [
+        {
+          "label": "Formativa e reflexiva, orientando as práticas pedagógicas.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Mais burocrática, voltada ao cumprimento de normas.",
+          "valor": "b",
+          "peso": 2
+        },
+        { "label": "Pouco estruturada ou ausente.", "valor": "c", "peso": 1 }
+      ]
+    },
+    {
+      "pergunta": "Os dados das avaliações influenciam a formação continuada dos professores?",
+      "opcoes": [
+        {
+          "label": "Sim, orientam temas e estratégias formativas.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Apenas de forma indireta ou pontual.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Não há relação entre dados e formação.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    },
+    {
+      "pergunta": "Para a equipe escolar, os dados de avaliação são vistos principalmente como:",
+      "opcoes": [
+        {
+          "label": "Ferramentas para melhorar a aprendizagem dos estudantes.",
+          "valor": "a",
+          "peso": 3
+        },
+        {
+          "label": "Exigências administrativas do sistema educacional.",
+          "valor": "b",
+          "peso": 2
+        },
+        {
+          "label": "Algo distante da realidade da escola.",
+          "valor": "c",
+          "peso": 1
+        }
+      ]
+    }
+  ],
+  "perfis": [
+    {
+      "nome": "Perfil A — Uso pedagógico dos dados",
+      "min": 24,
+      "max": 30,
+      "descricao": "Sua escola utiliza os dados como instrumentos de reflexão, planejamento e melhoria da aprendizagem. As avaliações apoiam decisões pedagógicas, formação docente e acompanhamento contínuo dos estudantes.",
+      "acao": "Desafio: aprofundar a cultura de análise e transformar boas práticas em processos consolidados."
+    },
+    {
+      "nome": "Perfil B — Uso predominantemente burocrático",
+      "min": 17,
+      "max": 23,
+      "descricao": "Os dados estão presentes na rotina escolar, mas seu uso ainda se concentra no cumprimento de demandas formais e administrativas, com impacto limitado na prática pedagógica.",
+      "acao": "Potencial: avançar da organização dos dados para sua leitura pedagógica coletiva."
+    },
+    {
+      "nome": "Perfil C — Baixo uso ou não uso dos dados",
+      "min": 10,
+      "max": 16,
+      "descricao": "Os dados das avaliações ainda não fazem parte do cotidiano pedagógico da escola ou são pouco apropriados pela equipe.",
+      "acao": "Oportunidade: iniciar um processo gradual de leitura, compreensão e uso dos dados como aliados do trabalho pedagógico."
+    }
+  ]
+}

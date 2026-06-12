@@ -1,0 +1,25 @@
+{
+  "titulo": "Quiz",
+  "subtitulo": "Sobre o vídeo acima, responda e confira seu desempenho!",
+  "questoes": [
+    {
+      "id": 1,
+      "enunciado": "De acordo com o vídeo, quando a avaliação educacional cumpre efetivamente o seu papel na gestão escolar quando:",
+      "dica": "",
+      "alternativas": [
+        "A análise dos resultados é acompanhada de ações que promovem a melhoria do ensino-aprendizagem.",
+        "Gera dados numéricos voltados para a comparação de desempenho entre unidades escolares.",
+        "Propicia a classificação do desempenho dos estudantes e a qualificação dos professores e gestores.",
+        "Se limita à aplicação de procedimentos de avaliações externas de forma periódica."
+      ],
+      "correta": 0,
+      "feedback": {
+        "correto": "Muito bem! Você veio de lá pequenininho!",
+        "incorreto": "Mal educado"
+      }
+    }
+  
+  ]
+}
+
+

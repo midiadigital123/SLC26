@@ -1,0 +1,22 @@
+{
+  "titulo": "Sobre o vídeo acima, responda e confira seu desempenho!",
+  "subtitulo": "",
+  "questoes": [
+    {
+      "id": 1,
+      "enunciado": "De acordo com o modelo apresentado no vídeo sobre o livro Data Wise, qual é a principal finalidade da avaliação no processo de planejamento escolar?",
+      "dica": "",
+      "alternativas": [
+        "Apoiar, orientar e informar a ação pedagógica e a tomada de decisões.",
+        "Classificar escolas e estudantes com base em resultados.",
+        "Garantir o cumprimento das metas estabelecidas pela rede de ensino.",
+        "Produzir diagnósticos definitivos sobre a qualidade da escola."
+      ],
+      "correta": 0,
+      "feedback": {
+        "correto": "",
+        "incorreto": ""
+      }
+    }
+  ]
+}
