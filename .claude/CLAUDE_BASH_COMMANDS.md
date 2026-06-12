@@ -112,3 +112,15 @@ git add .claude/CLAUDE_BASH_COMMANDS.md && git commit -m "docs: mensagem"
 
 **Resultado:** Criou o commit `d4d9723` adicionando 53 linhas ao `CLAUDE_BASH_COMMANDS.md`.
 
+---
+
+### 9. Stagear múltiplos caminhos distintos e commitar em sequência
+
+```bash
+git add CLAUDE.md && git add -u "SAEPE(EXEMPLO)/" && git commit -m "mensagem" && git push
+```
+
+**O que faz:** Encadeia múltiplos `git add` antes do commit — cada um cobre um caso diferente (arquivo avulso + deleção em diretório com espaço no nome). Diretórios com espaços no nome precisam de aspas. O `&&` garante que cada etapa só prossiga se a anterior tiver sucesso.
+
+**Resultado:** Commit `bb6980a` com 2 arquivos alterados (33 inserções, 4070 deleções) — `CLAUDE.md` atualizado e `SAEPE(EXEMPLO)/main-bundle.css` removido.
+
