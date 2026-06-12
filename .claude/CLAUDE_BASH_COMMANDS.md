@@ -100,3 +100,15 @@ git push
 
 **Resultado:** Atualizou `main` no remote `https://github.com/midiadigital123/SLC26.git` do hash `38a7120` para `a2860ca`.
 
+---
+
+### 8. Adicionar arquivo específico e commitar em sequência
+
+```bash
+git add .claude/CLAUDE_BASH_COMMANDS.md && git commit -m "docs: mensagem"
+```
+
+**O que faz:** Encadeia dois comandos com `&&` — o segundo só executa se o primeiro tiver sucesso (exit code 0). Útil para stagear um único arquivo e commitar imediatamente sem um segundo comando separado.
+
+**Resultado:** Criou o commit `d4d9723` adicionando 53 linhas ao `CLAUDE_BASH_COMMANDS.md`.
+
