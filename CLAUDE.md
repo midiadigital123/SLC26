@@ -34,8 +34,6 @@ Sispae-gestores-40h/2026-1/
       quiz1-t4.json
       teste-capricho.json  # Dados do Teste de Perfil (formato distinto)
   content/
-    css/
-      bbo1gxr.css          # Fonte Proxima Nova (Adobe Typekit)
     img/
       img1.png … img9.png  # Imagens de cards/conteúdo
       moodle-quiz-final01.gif
@@ -63,14 +61,14 @@ Sispae-gestores-40h/2026-1/
 
 Definidos em `:root` dentro do namespace, acessíveis em todo o bundle:
 
-| Token | Valor | Uso |
-|-------|-------|-----|
-| `--base1` | `#30bbb4` (teal) | Cor primária do curso |
-| `--base2` | `#30bb85` (verde) | Cor secundária |
-| `--inter1-bg` | verde claro | Interatividade tipo 1 |
-| `--inter2-bg` | azul claro | Interatividade tipo 2 |
-| `--inter3-bg` | vermelho/rosa claro | Interatividade tipo 3 |
-| `--inter1/2/3` | versões saturadas | Elementos de destaque |
+| Token          | Valor               | Uso                   |
+| -------------- | ------------------- | --------------------- |
+| `--base1`      | `#30bbb4` (teal)    | Cor primária do curso |
+| `--base2`      | `#30bb85` (verde)   | Cor secundária        |
+| `--inter1-bg`  | verde claro         | Interatividade tipo 1 |
+| `--inter2-bg`  | azul claro          | Interatividade tipo 2 |
+| `--inter3-bg`  | vermelho/rosa claro | Interatividade tipo 3 |
+| `--inter1/2/3` | versões saturadas   | Elementos de destaque |
 
 Tipografia e espaçamento usam `clamp()` para fluidez responsiva:
 
@@ -89,21 +87,21 @@ O arquivo é um **IIFE** (Immediately Invoked Function Expression) com todos os 
 
 ### Módulos internos (ordem no arquivo)
 
-| Módulo | Selector/Trigger | Responsabilidade |
-|--------|-----------------|-----------------|
-| `DOMUtils` | `.img-link[data-link]`, `.flip-cards .recurso[data-link]` | `giveBlankToReference()` — abre links em `_parent` (iframe Moodle); `limparLinks()` e `limparEstilos()` |
-| `PodcastManager` | `[role="podcast"][data-url]` | Embute SoundCloud Widget API inline; cria iframe, gerencia play/pause/progresso/rewind |
-| `AccordionManager` | `.accordion-container` | Delegação de click; toggle `.accordion-item.active`; gerencia `aria-expanded` |
-| `CarouselManager` | `.carousel` (Bootstrap) | Wrapper do carousel Bootstrap; atualiza cor das setas no mobile conforme fundo do slide; desativa setas na primeira/última |
-| `QuizManager` | `[data-quiz-url]` | Cria Web Component com Shadow DOM; busca JSON via `fetch()`; CSS carregado do CDN; suporta `data-feedback="true"` |
-| `TesteCapricho` | `[data-teste-capricho]` | Quiz de perfil da escola; estado reativo com getters/setters JS |
-| `ComposicaoCaderno` | `[data-composicao-caderno]` | Composição baseada em template; busca template remoto |
-| Infopack externo | `window.infopack` | Chamado se disponível: `window.infopack.init()` |
+| Módulo              | Selector/Trigger                                          | Responsabilidade                                                                                                           |
+| ------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `DOMUtils`          | `.img-link[data-link]`, `.flip-cards .recurso[data-link]` | `giveBlankToReference()` — abre links em `_parent` (iframe Moodle); `limparLinks()` e `limparEstilos()`                    |
+| `PodcastManager`    | `[role="podcast"][data-url]`                              | Embute SoundCloud Widget API inline; cria iframe, gerencia play/pause/progresso/rewind                                     |
+| `AccordionManager`  | `.accordion-container`                                    | Delegação de click; toggle `.accordion-item.active`; gerencia `aria-expanded`                                              |
+| `CarouselManager`   | `.carousel` (Bootstrap)                                   | Wrapper do carousel Bootstrap; atualiza cor das setas no mobile conforme fundo do slide; desativa setas na primeira/última |
+| `QuizManager`       | `[data-quiz-url]`                                         | Cria Web Component com Shadow DOM; busca JSON via `fetch()`; CSS carregado do CDN; suporta `data-feedback="true"`          |
+| `TesteCapricho`     | `[data-teste-capricho]`                                   | Quiz de perfil da escola; estado reativo com getters/setters JS                                                            |
+| `ComposicaoCaderno` | `[data-composicao-caderno]`                               | Composição baseada em template; busca template remoto                                                                      |
+| Infopack externo    | `window.infopack`                                         | Chamado se disponível: `window.infopack.init()`                                                                            |
 
 ### Fora do IIFE (escopo global)
 
-| Módulo | Selector | Responsabilidade |
-|--------|----------|-----------------|
+| Módulo          | Selector          | Responsabilidade                                                                                                               |
+| --------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `DicaNavegacao` | `.dica-navegacao` | Tooltip/animação de navegação; `data-dica-navegacao-message`; IDs únicos por hash aleatório para suportar múltiplas instâncias |
 
 ### Fluxo de Inicialização
@@ -139,7 +137,12 @@ O `setTimeout(300ms)` garante que jQuery (fornecido pelo Moodle) esteja disponí
       "id": 1,
       "enunciado": "Texto da questão",
       "dica": "",
-      "alternativas": ["Alternativa A", "Alternativa B", "Alternativa C", "Alternativa D"],
+      "alternativas": [
+        "Alternativa A",
+        "Alternativa B",
+        "Alternativa C",
+        "Alternativa D"
+      ],
       "correta": 0,
       "feedback": {
         "correto": "Texto ao acertar",
@@ -157,13 +160,13 @@ O `setTimeout(300ms)` garante que jQuery (fornecido pelo Moodle) esteja disponí
 
 ## Dependências Externas
 
-| Dependência | Origem | Observação |
-|-------------|--------|------------|
-| jQuery | Moodle (plataforma) | Não está nos arquivos locais |
-| Bootstrap 4/5 | Moodle (plataforma) | Grid e carousel |
-| Font Awesome 6.5.1 | CDN (injetado em runtime) | Injetado em `DOMContentLoaded` pelo bundle |
-| Proxima Nova | Adobe Typekit (`bbo1gxr.css`) | Carregado localmente em `content/css/` |
-| Infopack | CDN CAED | Script externo; `window.infopack` |
+| Dependência        | Origem                        | Observação                                 |
+| ------------------ | ----------------------------- | ------------------------------------------ |
+| jQuery             | Moodle (plataforma)           | Não está nos arquivos locais               |
+| Bootstrap 4/5      | Moodle (plataforma)           | Grid e carousel                            |
+| Font Awesome 6.5.1 | CDN (injetado em runtime)     | Injetado em `DOMContentLoaded` pelo bundle |
+| Proxima Nova       | Adobe Typekit (`bbo1gxr.css`) | Carregado localmente em `content/css/`     |
+| Infopack           | CDN CAED                      | Script externo; `window.infopack`          |
 
 ## Pontos de Atenção
 
